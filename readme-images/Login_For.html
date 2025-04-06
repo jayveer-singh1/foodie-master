@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Box</title>
+  <style>
+    /* CSS for styling the login button and login box */
+    .login-button {
+      background-color: hsl(32, 100%, 59%);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-box {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: white;
+      border: 2px solid hsl(32, 100%, 59%);
+      border-radius: 5px;
+      z-index: 1;
+    }
+
+    .login-box.active {
+      display: block;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+      color: hsl(32, 100%, 59%);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Login button -->
+  <button class="login-button" onclick="toggleLoginBox()">Login</button>
+
+  <!-- Login box -->
+  <div class="login-box" id="loginBox">
+    <span class="close-button" onclick="toggleLoginBox()">X</span>
+    <!-- Login form goes here -->
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <!-- Your login form fields here -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <script>
+    // Function to toggle login box visibility
+    function toggleLoginBox() {
+      var loginBox = document.getElementById('loginBox');
+      loginBox.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

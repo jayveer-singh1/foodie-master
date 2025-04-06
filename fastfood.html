@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<style>
+
+    :root
+{
+    --green:#00ff33;
+    --black:#000000;
+    --light-shadow:0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    --border: 0.1rem solid rgba(0, 0, 0.1);
+    --outline: 0.1rem solid rgba(0, 0, 0.1);
+
+
+    }
+
+    body{
+        background: rgb(255, 232, 185);
+    }
+
+ .box-container {
+
+border: 0px solid;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(20rem, 9fr));
+gap: 1.5rem;
+}
+ .box-container .box {
+   
+border: 1px solid black;
+padding: 3rem 2rem;
+background: white;
+outline: var(--outline) invert;
+outline-offset: -1rem;
+text-align: center;
+box-shadow: var(--box-shadow);
+}
+
+
+
+ .box-container .box img {
+margin: 1rem 0;
+height: 15rem;
+margin-top: -20px;
+
+}
+
+.box-container .box h2 {
+font-size: 2.3rem;
+line-height: 1.8;
+margin-top: -20px;
+color: var(--black);
+}
+
+
+ .box-container .box h3 {
+font-size: 2rem;
+line-height: 1.8;
+margin-top: -40px;
+color: var(--black);
+}
+
+
+.box-container .box .btn{
+    
+    border: 0.2rem solid black;
+    margin: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    border-radius: .5rem;
+    color: black;
+    cursor:pointer;
+    background: none;
+
+}
+
+.box-container .box .btn{
+    margin-top: -30rem;
+    margin-bottom: -30rem;
+}
+
+.box-container .box .btn:hover{
+    background:rgb(2, 149, 2);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+html {
+  font-size: 55%;
+  .header {
+    padding: 2rem;
+  }
+}
+section.features {
+  padding: 2rem;
+}
+}
+
+</style>
+
+
+<body>
+    <div class="box-container">
+        <div class="box ">
+            <img src="dabeli-1.jpg" alt="">
+            <h2>Dabeli</h2>
+            <h3>₹40</h3>
+            <a href="#" class="btn"> Buy Now </a>
+
+        </div>
+
+        <div class="box ">
+            <img src="vadapav.jpg" alt="">
+            <h2>Vada Paav</h2>
+            <h3>₹35</h3>
+            <a href="#" class="btn"> Buy Now </a>
+
+        </div>
+
+        <div class="box ">
+            <img src="bhel.jpg" alt="">
+            <h2>Bhel Puri</h2>
+            <h3>₹40</h3>
+            <a href="#" class="btn"> Buy Now </a>
+        </div>
+
+        <div class="box ">
+            <img src="panipuri.jpg" alt="">
+            <h2>Pani Puri</h2>
+            <h3>₹50</h3>
+            <a href="#" class="btn"> Buy Now </a>
+
+        </div>
+
+        <div class="box ">
+            <img src="pasta.jpg" alt="">
+            <h2>Cheese Pasta</h2>
+            <h3>₹150</h3>
+            </h3>
+            <a href="#" class="btn"> Buy Now </a>
+
+        </div>
+
+        <div class="box ">
+            <img src="manchurian.jpg" alt="">
+            <h2>Manchurian</h2>
+            <h3>₹120</h3>
+            <a href="#" class="btn"> Buy Now </a>
+
+        </div>
+
+
+        
+    </div>
+
+</body>
+</html>
